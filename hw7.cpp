@@ -7,6 +7,13 @@
 //
 
 #include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <ctime>
+#include <cstdlib>
+#include <iomanip>
+#include "cards.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
