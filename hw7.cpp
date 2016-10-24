@@ -48,7 +48,7 @@ int main() {
             
             cout << "The dealer's total is " << dealer.sum() << endl;
         }
-        if ((dealer.sum() <player1_h.sum()) && (player1_h.sum() < 7.5)){
+        if (((dealer.sum() <player1_h.sum()) && (player1_h.sum() < 7.5))||((dealer.sum()>7.5)&&(player1_h.sum()<7.5))){
             cout << "You win " << bet << endl;
             player1.new_money(+bet);}
         else if (dealer.sum() > player1_h.sum() || player1_h.sum() > 7.5)
