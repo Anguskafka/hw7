@@ -10,7 +10,7 @@
 
 #ifndef CARDS_H
 #define CARDS_H
-#include <stdio.h>
+
 using namespace std;
 
 enum suit_t {OROS, COPAS, ESPADAS, BASTOS};
@@ -62,13 +62,11 @@ class Hand {
    public:
       // A vector of Cards
       Hand();
-    void draw_card();
-    void reset_hand();
-    void print();
-    void newprint ();
-    double sum();
+
+      // You decide what functions you'll need...
+
    private:
-       vector<Card> cards;
+      // You decide what fields you'll need...
 };
 
 
