@@ -139,6 +139,18 @@ bool Card::operator < (Card card2) const {
    ************************************************* */
 // Implemente the member functions of the Hand class here.
 
+Hand::Hand(){
+}
+void Hand::draw_card() {
+    Card newCard; //Creates a random card.
+    cards.push_back(newCard);
+    return;
+}
+void Hand::reset_hand() {
+    cards.resize(0);
+    return;
+}
+
 
 
 /* *************************************************
