@@ -24,5 +24,10 @@ int main() {
     int bet;
     string response;
     Player player1 = Player(100);
+    while (player1.get_money() > 0 && player1.get_money()<1000)
+    {
+        
+    }
+
     return 0;
 }
