@@ -26,7 +26,13 @@ int main() {
     Player player1 = Player(100);
     while (player1.get_money() > 0 && player1.get_money()<1000)
     {
+        cout << "You have: " << player1.get_money() << " ";
+        cout << "bet:";
+        cin >> bet;
+        fout << setw(5) << " Game number:" << count << setw(10) << "money left: " << player1.get_money();
+        fout << "Bet: "<< bet;
         
+
     }
 
     return 0;
