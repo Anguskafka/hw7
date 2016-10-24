@@ -31,8 +31,18 @@ int main() {
         cin >> bet;
         fout << setw(5) << " Game number:" << count << setw(10) << "money left: " << player1.get_money();
         fout << "Bet: "<< bet;
+        Hand player1_h, dealer;
+        response = "y";
+        while (response == "y") {
+            player1_h.draw_card();
+            cout << "your cards: " << endl;
+            player1_h.print();
+            cout << "Your total is " << player1_h.sum() << ".Do you want another card (y/n)?";
+            cin >> response;
+        }
         
-
+        
+        
     }
 
     return 0;
