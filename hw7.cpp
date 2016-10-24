@@ -40,7 +40,17 @@ int main() {
             cout << "Your total is " << player1_h.sum() << ".Do you want another card (y/n)?";
             cin >> response;
         }
+        while (dealer.sum()<5.5) {
+            dealer.draw_card();
+            
+            cout << "The dealer cards: " << endl;
+            dealer.print();
+            
+            cout << "The dealer's total is " << dealer.sum() << endl;
+        }
         
+        
+
         
         
     }
