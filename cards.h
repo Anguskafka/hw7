@@ -81,6 +81,8 @@ class Player {
       // Constructor. 
       //    Assigns initial amount of money
       Player(int m);
+    int get_money ();
+    int new_money (int y);
 
       // You decide what functions you'll need...
 
