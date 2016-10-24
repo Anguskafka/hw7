@@ -14,10 +14,15 @@
 #include <cstdlib>
 #include <iomanip>
 #include "cards.h"
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-     std::cout << "Hello, World!\n";
+using namespace std;
+int main() {
+    ofstream fout;
+    fout.open("gamelog.txt");
+    int count;
+    
+    srand(static_cast<int>(time(0)));
+    int bet;
+    string response;
+    Player player1 = Player(100);
     return 0;
 }
