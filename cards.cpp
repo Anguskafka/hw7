@@ -185,6 +185,7 @@ int Player::get_money() {
     return money;
 }
 int Player::new_money(int y) {
+	money += y;
     return money;
 }
 
