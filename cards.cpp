@@ -177,4 +177,15 @@ double Hand::sum(){
    Player class
    ************************************************* */
 // Implemente the member functions of the Player class here.
+Player::Player(int m) {
+    money = m;
+}
+
+int Player::get_money() {
+    return money;
+}
+int Player::new_money(int y) {
+    return money;
+}
+
 
