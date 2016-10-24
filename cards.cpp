@@ -150,6 +150,26 @@ void Hand::reset_hand() {
     cards.resize(0);
     return;
 }
+void Hand::print() {
+    for ( int i=0 ; i<cards.size() ; i++ )
+        cout  <<cards[i].get_spanish_rank() << " of " << cards[i].get_spanish_suit() << setw(10) << right << "(" <<cards[i].get_english_rank() << " of " << cards[i].get_english_suit() << ")" <<endl;
+    return;
+}
+void Hand::newprint() {
+    double x = cards.size()-1;
+    cout << cards[x].get_spanish_rank() << " of " << cards[x].get_spanish_suit() << setw(10) << "(" <<cards[x].get_english_rank() << " of " << cards[x].get_english_suit() << ")" <<endl;
+    return;
+}
+double Hand::sum(){
+    double sum = 0;
+    for ( int i=0 ; i<cards.size() ; i++ ){
+        if (cards[i].get_rank() <= 7)
+            sum += cards[i].get_rank();
+        else sum += 0.5;
+    }
+    return sum;
+}
+
 
 
 
